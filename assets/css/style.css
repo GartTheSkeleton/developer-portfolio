@@ -85,6 +85,7 @@ header nav {
 #avatar{
     border: 5px solid black;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
 }
 
 /*Styling the about section*/
@@ -98,8 +99,11 @@ header nav {
     
 }
 .about h2 {
+    font-size: 30px;
     color: var(--tertiary-color);
+    padding-bottom: 10px;
 }
+
 .about p {
     color: var(--tertiary-color);
     text-align: center;
@@ -111,8 +115,24 @@ header nav {
 .work {
     padding: 20px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-around;
     background-color: var(--primary-color);
+}
+
+.work h2{
+    font-size: 30px;
+    color: var(--tertiary-color);
+    padding-bottom: 10px;
+}
+
+.work p {
+    color: var(--tertiary-color);
+    text-align: center;
+    font-size: 18px;
+    width: 80%;
+    padding-bottom: 10px;
 }
 
 .contact {
@@ -120,6 +140,12 @@ header nav {
     display: flex;
     justify-content: space-around;
     background-color: var(--background-color);
+}
+
+.contact h2 {
+    font-size: 30px;
+     color: var(--tertiary-color);
+
 }
 
 /*Styling the Footer*/
