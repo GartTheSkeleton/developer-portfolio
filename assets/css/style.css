@@ -1,0 +1,90 @@
+:root {
+    --primary-color: #cccccc;
+    --secondary-color: #999999;
+    --tertiary-color: #333333;
+    --background-color: #eeeeee;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--tertiary-color);
+    flex-wrap: nowrap;
+    
+}
+
+header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    flex: 5;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+header ul {
+    list-style: none;
+    justify-content: center;
+}
+
+header nav {
+    flex: 1;
+}
+
+#arrow{
+    padding: 2px;
+    position: fixed;
+    top: 50%;
+  }
+
+#avatar{
+    border: 5px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    flex: 0 2;
+}
+
+.about {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--background-color);
+}
+
+.about p {
+    text-align: center;
+}
+
+.work {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--primary-color);
+}
+
+.contact {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--background-color);
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+}
