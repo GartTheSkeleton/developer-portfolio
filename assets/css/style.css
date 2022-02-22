@@ -99,9 +99,10 @@ header nav {
     
 }
 .about h2 {
-    font-size: 30px;
+    font-size: 36px;
     color: var(--tertiary-color);
     padding-bottom: 10px;
+    text-shadow: 0 0 10px var(--secondary-color);
 }
 
 .about p {
@@ -147,24 +148,28 @@ header nav {
     border: 5px solid black;
 }
 
+.project-image:hover {
+    border: 8px dashed white
+}
 
 .work h2{
-    z-index: 2;
     position: relative;
     color: var(--tertiary-color);
     padding-bottom: 10px;
+    font-size: 36px;
+    text-shadow: 0 0 10px var(--secondary-color);
 }
 
 .wrap-container {
     position: absolute;
     padding: 10px 15px;
+    background-color: black;
 }
 
 .lead-project h3, .secondary-project h3{
     font-size: 18px;
     z-index: 2;
     position: relative;
-    width: inherit;
 }
 .work p {
     z-index: 2;
