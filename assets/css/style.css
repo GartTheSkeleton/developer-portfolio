@@ -182,14 +182,54 @@ header nav {
 .contact {
     padding: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     background-color: var(--background-color);
 }
 
-.contact h2 {
-    font-size: 30px;
-     color: var(--tertiary-color);
+.contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    border-bottom: 5px dashed #333333;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
 
+.contact-box {
+    padding: 20px;
+}
+
+.contact h2 {
+    font-size: 36px;
+    color: var(--tertiary-color);
+    padding-bottom: 10px;
+    text-shadow: 0 0 10px var(--secondary-color);
+}
+
+.contact ul {
+    list-style: none;
+    padding-left: 18px;
+}
+
+.contact a:link{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--tertiary-color);
+    text-decoration: none;
+}
+
+.contact a:visited{
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+
+.contact a:hover{
+    color: var(--primary-color)
 }
 
 /*Styling the Footer*/
@@ -208,5 +248,14 @@ footer {
     .secondary-project {
         height: 50%;
         width: 50%;
+    }
+
+    .contacts {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .contact-box {
+        padding: 8px;
     }
 }
